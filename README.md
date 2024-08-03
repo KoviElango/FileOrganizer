@@ -14,4 +14,14 @@ Script Workflow
 - Create Folder Map
 - Move Files: The script moves files into the corresponding folders based on the folder map.
 
+Auto Categorization Dictionary
+The script uses predefined categories for automatic mode:
+- Images: .jpg, .jpeg, .png, .gif, .bmp, .tiff
+- Videos: .mp4, .avi, .mkv, .mov, .wmv, .flv
+- Audio: .mp3, .wav, .aac, .flac, .ogg, .wma
+- Documents: .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .txt
+- Archives: .zip, .rar, .7z, .tar, .gz
+- Scripts: .py, .js, .html, .css, .sh, .bat
+- Others: Any other file extensions not falling into the above categories.
+
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue to discuss improvements or bug fixes.
