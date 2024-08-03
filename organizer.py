@@ -25,6 +25,8 @@ if naming_option == 'manual':
             os.makedirs(folder_path, exist_ok=True)
         folder_map[ext] = folder_path
         print(f"Mapped {ext} files to folder {folder_name}")
+        for k, v in folder_map.items():
+            print(f"Extension: {k} -> Folder: {v}")
 else:
     for ext in extensions:
         folder_name = ext.strip('.').lower() + "_files"
