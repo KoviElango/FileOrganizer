@@ -1,3 +1,31 @@
+"""
+File Organizer Script
+
+This script organizes files in a specified directory by their extensions.
+It provides options for manual or automatic folder naming and can perform
+a dry run to simulate the file organization process without actually moving
+any files. The script also generates a detailed report of the file organization
+process and logs all significant actions and errors.
+
+Features:
+- Organize files based on their extensions.
+- Two modes of operation: manual and automatic.
+- Dry run mode to simulate the file organization process.
+- Backup option to create a copy of the original directory.
+- Detailed report generation of the file organization process.
+- Logging of all significant actions and errors.
+
+Usage:
+1. Run the script and enter the path for the directory to be organized.
+2. Choose between manual or automatic folder naming.
+3. Optionally, perform a dry run to see what changes will be made.
+4. Review the dry run report and confirm if you want to proceed with the actual file organization.
+5. Check the generated report and log file for details of the file organization process.
+
+Author: Koovendhan Elango
+"""
+
+
 import shutil
 import os
 import logging
