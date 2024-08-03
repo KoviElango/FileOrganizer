@@ -12,6 +12,8 @@ Script Workflow
 - Choose Naming Option: The script asks if you want to name the folders manually or automatically.
 - Collect Extensions: The script scans the source directory and collects all unique file extensions.
 - Create Folder Map
+  - In manual mode, the script prompts you to enter folder names for each file extension.
+  - In automatic mode, the script categorizes files into predefined categories (images, videos, audio, documents, archives, scripts, others).
 - Move Files: The script moves files into the corresponding folders based on the folder map.
 
 Auto Categorization Dictionary
