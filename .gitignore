@@ -1,5 +1,3 @@
-# Ignore log file
 file_organizer.log
 
-# Ignore report file
-file_organizer_report.txt
+.vscode
