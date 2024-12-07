@@ -27,3 +27,5 @@ The script uses predefined categories for automatic mode:
 - Others: Any other file extensions not falling into the above categories.
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue to discuss improvements or bug fixes.
+
+include scripts to run at specific intervals of time
