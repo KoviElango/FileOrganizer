@@ -1,31 +1,72 @@
-File Organizer
+from docx import Document
 
-The File Organizer Script is a Python program designed to help you organize files in a specified directory by their extensions. We know how our desktop and downloads folder is cluttered. Well, this will help better organise those files. It provides two modes for organizing files: manual and automatic. In manual mode, you can specify the folder names for each file extension. In automatic mode, the script generates folder names based on the file extensions.
+# Create a new Document
+doc = Document()
 
-Prerequisites
+# Add Title
+doc.add_heading('File Organizer', level=1)
 
-- Python 3.x
-- shutil and os modules (these are part of the Python standard library)
+# Add Description
+doc.add_paragraph(
+    "The **File Organizer Script** is a Python program that organizes files in a specified directory by their extensions. "
+    "It helps declutter messy folders like Desktop or Downloads by categorizing files into folders. "
+    "The script supports **Manual** and **Automatic** modes for organizing files:"
+)
+doc.add_paragraph(
+    "- **Manual Mode**: Lets you specify folder names for each file extension.\n"
+    "- **Automatic Mode**: Automatically generates folder names based on predefined categories."
+)
 
-Script Workflow
-- Input Source Directory: The script prompts you to enter the path of the directory you want to organize.
-- Choose Naming Option: The script asks if you want to name the folders manually or automatically.
-- Collect Extensions: The script scans the source directory and collects all unique file extensions.
-- Create Folder Map
-  - In manual mode, the script prompts you to enter folder names for each file extension.
-  - In automatic mode, the script categorizes files into predefined categories (images, videos, audio, documents, archives, scripts, others).
-- Move Files: The script moves files into the corresponding folders based on the folder map.
+# Add Prerequisites Section
+doc.add_heading('Prerequisites', level=2)
+doc.add_paragraph("- Python 3.x")
+doc.add_paragraph("- `shutil` and `os` (part of the Python standard library)")
 
-Auto Categorization Dictionary
-The script uses predefined categories for automatic mode:
-- Images: .jpg, .jpeg, .png, .gif, .bmp, .tiff
-- Videos: .mp4, .avi, .mkv, .mov, .wmv, .flv
-- Audio: .mp3, .wav, .aac, .flac, .ogg, .wma
-- Documents: .pdf, .doc, .docx, .xls, .xlsx, .ppt, .pptx, .txt
-- Archives: .zip, .rar, .7z, .tar, .gz
-- Scripts: .py, .js, .html, .css, .sh, .bat
-- Others: Any other file extensions not falling into the above categories.
+# Add Workflow Section
+doc.add_heading('Workflow', level=2)
+doc.add_paragraph(
+    "1. **Input Source Directory**: Enter the directory path to organize.\n"
+    "2. **Choose Mode**: Specify folder names manually or use predefined automatic categorization.\n"
+    "3. **Collect Extensions**: Scan the directory to identify unique file extensions.\n"
+    "4. **Create Folder Map**:\n"
+    "   - **Manual Mode**: Enter folder names for each file extension.\n"
+    "   - **Automatic Mode**: Categorize files using predefined categories.\n"
+    "5. **Move Files**: Organize files into the mapped folders."
+)
 
-Contributions are welcome! Please feel free to submit a Pull Request or open an issue to discuss improvements or bug fixes.
+# Add Auto Categorization Dictionary Section
+doc.add_heading('Auto Categorization Dictionary', level=2)
+doc.add_paragraph(
+    "The script uses these categories in automatic mode:\n"
+    "- **Images**: `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.tiff`\n"
+    "- **Videos**: `.mp4`, `.avi`, `.mkv`, `.mov`, `.wmv`, `.flv`\n"
+    "- **Audio**: `.mp3`, `.wav`, `.aac`, `.flac`, `.ogg`, `.wma`\n"
+    "- **Documents**: `.pdf`, `.doc`, `.docx`, `.xls`, `.xlsx`, `.ppt`, `.pptx`, `.txt`\n"
+    "- **Archives**: `.zip`, `.rar`, `.7z`, `.tar`, `.gz`\n"
+    "- **Scripts**: `.py`, `.js`, `.html`, `.css`, `.sh`, `.bat`\n"
+    "- **Others**: Extensions not listed above."
+)
 
-include scripts to run at specific intervals of time
+# Add Contributions Section
+doc.add_heading('Contributions', level=2)
+doc.add_paragraph(
+    "Contributions are welcome! Submit a Pull Request or open an issue to suggest improvements."
+)
+
+# Add Future Scope Section
+doc.add_heading('Future Scope', level=2)
+doc.add_heading('Suggested Improvements:', level=3)
+doc.add_paragraph(
+    "- **Scheduler Integration**: Enable periodic execution to keep directories automatically organized.\n"
+    "- **GUI Interface**: Add a user-friendly graphical interface for easier configuration.\n"
+    "- **Cloud Integration**: Support for organizing files in cloud directories (e.g., Google Drive, Dropbox).\n"
+    "- **Customization Options**: Allow users to define their own categories and rules.\n"
+    "- **Multi-Language Support**: Add translations for a global user base.\n"
+    "- **File Preview Feature**: Provide a preview of how files will be organized before execution."
+)
+
+# Save the Document
+file_path = "/mnt/data/File_Organizer_Documentation.docx"
+doc.save(file_path)
+
+file_path
