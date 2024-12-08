@@ -18,7 +18,6 @@ Workflow
 	•	Manual Mode: Enter folder names for each file extension.
 	•	Automatic Mode: Categorize files using predefined categories.
 	5.	Move Files: Organize files into the mapped folders.
-
 Auto Categorization Dictionary
 
 The script uses these categories in automatic mode:
